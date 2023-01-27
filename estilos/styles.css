@@ -1,0 +1,278 @@
+/*GLOBAL*/
+#global{
+    background-color:rgb(223, 207, 213) ;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER generales*/
+.encabezado{
+    position: relative;
+}
+
+/*logo*/
+
+.amarena {
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width:200px;
+    height:200px;
+    
+}
+
+/*redes*/
+
+
+.icono{
+    margin:5px;
+    width: 30px;
+    height: 30px;
+    
+    
+    
+}
+
+
+/*Nav Bar*/
+
+.nav{
+    background-color:rgb(98,25,55);
+    
+    
+}
+
+.nav .lista{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+
+.nav .lista .items{
+    color:rgb(223, 207, 213);
+    text-decoration: none;
+    font-size:larger;
+    padding:20px 20px 20px 20px;
+    
+        
+}
+
+.nav .lista .items:hover{
+    color:rgb(98,25,55);
+    background-color:rgb(223, 207, 213);
+    box-shadow: 0.5px 0.5px 1px 1px black inset;
+
+}
+
+#menuDesplegable{
+    background-color:rgb(98,25,55);
+    
+}
+
+#menuDesplegableItems{
+    color:rgb(223, 207, 213);
+}
+
+#menuDesplegableItems:hover{
+    background-color: rgb(223, 207, 213);
+    color:rgb(98,25,55);
+    box-shadow: 0.5px 0.5px 1px 1px black inset;
+}
+
+
+/*responsive header*/
+
+.label, #menu{
+    display:none;
+}
+
+
+#menu:checked + .lista{
+    
+    clip-path: circle(100% at center);
+    width: 100%;
+    height: auto;
+    top:230px;
+    bottom: 30%;
+    background-color:rgb(98,25,55);
+    
+    
+    
+    
+    
+
+}
+
+
+@media (max-width: 700px){
+    
+    .redsocial{
+        position: absolute;    
+        bottom: 0px;
+        right: 100px;
+        font-size: x-small;
+        font-weight:500;
+        color: rgb(223, 207, 213);
+    
+    }
+    
+    .redsocial1{
+        position: absolute;   
+        bottom: 0px;
+        right: 1px;
+        font-size: x-small;
+        font-weight: 500;
+        color: rgb(223, 207, 213);
+    
+    }
+
+    .icono{
+        margin:5px;
+        width: 20px;
+        height: 20px;
+        
+        
+        
+    }
+
+    
+    .nav{
+        height: 30px;
+           
+    }
+    .label{
+        display:block;
+        cursor:pointer;
+    }
+
+    .lista {
+        position:static;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+
+    }
+
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+/*BODY*/
+
+.titulo{
+    color:rgb(98,25,55);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0.5px 0.5px 1px 1px rgb(98,25,55) inset;
+    
+}
+
+.box2{
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0.5px 0.5px 1px 1px rgb(98,25,55) inset;
+}
+
+.fotos{
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+
+.MediosDePago{
+ list-style-type: none;
+}
+
+
+/*responsive body*/
+
+@media (max-width: 800px) { 
+    .box{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    .box2{
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+#footer{
+    background-color: rgb(98,25,55);
+}
+
+
+.atribuciones{
+    display:flex;
+    flex-direction: column;
+    font-size: xx-small;
+    font-weight: 100;
+    
+}
+
+
+    
+
